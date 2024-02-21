@@ -1,2 +1,3 @@
 #!/bin/bash
-[ -f "$PYFILE" ] && python "$PYFILE"
+[ -n "$PYFILE" ] && [ -f "$PYFILE" ] && python "$PYFILE"
+
