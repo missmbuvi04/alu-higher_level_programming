@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-'''This file creates a class that inherits from List builtin functions '''
+""" using no module """
 
 
 class MyList(list):
-    '''This Class inherits the built in function list'''
+    """ my list class """
 
     def print_sorted(self):
-        '''Prints the list in a sorted order  '''
-        sorted_list = self[:]
-        sorted_list.sort()
-        print("{}".format(sorted_list))
+        """ function prints list in sorted order """
+        print(sorted(self))
