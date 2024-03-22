@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-# python script that fetches 'https://alu-intranet.hbtn.io/status
+"""
+This script fetches the status from a given URL using the urllib package.
+It then displays the body of the response with required formatting.
+"""
 
 import urllib.request
 import urllib.error
@@ -7,6 +10,8 @@ import urllib.error
 def fetch_status(url):
     """
     Fetches and prints the status from the given URL
+    Args:
+        url (str): The URL to fetch the status from
     """
     try:
         with urllib.request.urlopen(url) as response:
@@ -19,3 +24,4 @@ def fetch_status(url):
 
 if __name__ == "__main__":
     fetch_status("https://alu-intranet.hbtn.io/status")
+
