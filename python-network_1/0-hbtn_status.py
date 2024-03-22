@@ -15,13 +15,14 @@ def fetch_status(url):
     """
     try:
         with urllib.request.urlopen(url) as response:
-            body = response.read().decode('utf-8')
+            body = response.read()
             print("Body response:")
             print("\t- type:", type(body))
             print("\t- content:", body)
+            print("\t- utf8 content:", body.decode('utf-8'))
     except urllib.error.URLError as e:
         print("Error:", e.reason)
 
 if __name__ == "__main__":
-    fetch_status("https://alu-intranet.hbtn.io/status")
+    fetch_status("https://intranet.hbtn.io/status")
 
