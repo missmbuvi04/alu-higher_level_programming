@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+# python script that fetches 'https://alu-intranet.hbtn.io/status'
+"""
+    fetch 'https://intranet.hbtn.io/status'
+"""
+
 """
 Fetches status from either https://intranet.hbtn.io/status
 or http://0.0.0.0:5050/status using urllib.
