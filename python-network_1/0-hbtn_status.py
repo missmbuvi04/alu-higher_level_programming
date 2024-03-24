@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Script that fetches status from a URL using urllib."""
+"""A script that fetches status from https://alx-intranet.hbtn.io/status using urllib."""
 
 <<<<<<< HEAD
 """A script that
@@ -29,26 +29,17 @@ if __name__ == '__main__':
         
         print("\t- type: {}".format(type(content)))
 =======
-"""Python script that fetches"""
-
 import urllib.request
 
-
-
-
-
 def getStatus():
-    
-    """a"""
-    
+    """
+    This function fetches the status from 'https://intranet.hbtn.io/status' using urllib.
+    It prints out the response body.
+    """
     with urllib.request.urlopen('https://intranet.hbtn.io/status') as res:
-        
         content = res.read()
-        
         type_content = type(content)
-        
         print("Body response:")
-        
         print("\t- type: {}".format(type_content))
 >>>>>>> a1cb096b6652ca13a4e5fb24e043d4fbe759e625
         
@@ -63,4 +54,5 @@ def getStatus():
 if __name__ == "__main__":
     
     getStatus()
->>>>>>> a1cb096b6652ca13a4e5fb24e043d4fbe759e625
+>>>>>>> a1cb096b6652ca13a4e5fb24e043d4fbe759e625      
+
