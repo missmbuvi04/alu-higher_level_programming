@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """Documented by Lsblack"""
 
-<<<<<<< HEAD
+""" module uses the request module
+    to send a request to server """
+    <<<<<<< HEAD
 """
 
 requests model
