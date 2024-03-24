@@ -1,20 +1,14 @@
 #!/usr/bin/python3
-"""A script that
-- fetches http://0.0.0.0:5050/status.
-- uses urllib package
-"""
-
+"""Documented by Lsblack"""
+import urllib.request
 
 if __name__ == '__main__':
-    import urllib.request
-
-    url = 'http://0.0.0.0:5050/status'
+    url = 'https://intranet.hbtn.io/status'
 
     req = urllib.request.Request(url)
-    with urllib.request.urlopen(req) as res:
-        content = res.read()
+    with urllib.request.urlopen(req) as response:
+        content = response.read()
         print("Body response:")
-        print("\t- type: {}".format(type(content)))
-        print("\t- content: {}".format(content))
-        print("\t- utf8 content: {}".format(content.decode('utf-8')))
+        print("\t- type:", type(content))
+        print("\t- content:", content.decode("utf-8"))
 
