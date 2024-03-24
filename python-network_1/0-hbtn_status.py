@@ -1,14 +1,64 @@
 #!/usr/bin/python3
-"""Documented by Lsblack"""
-import urllib.request
+
+<<<<<<< HEAD
+"""A script that
+
+- fetches https://alx-intranet.hbtn.io/status.
+
+- uses urlib package
+
+"""
+
+
+
+
 
 if __name__ == '__main__':
-    url = 'https://intranet.hbtn.io/status'
+    
+    import urllib.request
+    
 
-    req = urllib.request.Request(url)
-    with urllib.request.urlopen(req) as response:
-        content = response.read()
+    
+    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
+        
+        content = res.read()
+        
         print("Body response:")
-        print("\t- type:", type(content))
-        print("\t- content:", content.decode("utf-8"))
+        
+        print("\t- type: {}".format(type(content)))
+=======
+"""Python script that fetches"""
 
+import urllib.request
+
+
+
+
+
+def getStatus():
+    
+    """a"""
+    
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as res:
+        
+        content = res.read()
+        
+        type_content = type(content)
+        
+        print("Body response:")
+        
+        print("\t- type: {}".format(type_content))
+>>>>>>> a1cb096b6652ca13a4e5fb24e043d4fbe759e625
+        
+        print("\t- content: {}".format(content))
+        
+        print("\t- utf8 content: {}".format(content.decode('utf-8')))
+<<<<<<< HEAD
+=======
+        
+
+        
+if __name__ == "__main__":
+    
+    getStatus()
+>>>>>>> a1cb096b6652ca13a4e5fb24e043
